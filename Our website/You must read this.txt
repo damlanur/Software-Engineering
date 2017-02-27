@@ -8,7 +8,38 @@ Advance Web application
    Deadline on Advance Web is 25 April.
 
 That mean I want to finish until 19 April
-Also you guys will chance to do your advance web project.
+Also you guys will chance to do your advance web project.'
+
+IMPORTANT
+-------------------------------------------------------------------------------------------
+IN CSS files
+	For class names
+	or
+	ID names
+	dont put weird names
+	Put like 
+	
+	EX:
+	for navagation 
+		class=nav
+	for main part
+		class= main
+	for main part first picture
+		class = mainfirstpic
+	etc.
+	
+	
+	Also try to put comments
+		About css part 
+			For example
+				css what is the purpose of that class?
+					ex: 
+						<ul class="navigation        <!-- This css is navigation -->
+						aefaefsoeifnsidfoisdjf
+						</ul>
+				this is simple but its better to put all of them because if you dont put at the end when 
+				we want to play on it. we may have difficulties to play on it.
+	
 
 ------------------------------------------------------------------------------------------------
 IMPORTANT
