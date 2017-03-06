@@ -1,6 +1,6 @@
-Guys (Ihsan Karagol)I am taking 
+Guys (Ihsan Karagol)
 
-That mean I want to finish until 19 April
+I want to finish until 19 April
 
 ------------------------------------------------------------------------------------------------
 
@@ -40,6 +40,5 @@ Today is Feb 27
 	How it is ? 
 	What is more requirements?
 	Probably we will not have any problem.	
-	At this point I want to know new ideas and 
-	help how to connect with database etc.
-7.  After that we will ready to present our project
+	At this point I want to know new ideas etc.
+7.  After that we will be ready to present our project
