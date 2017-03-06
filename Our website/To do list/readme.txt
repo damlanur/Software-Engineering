@@ -1,0 +1,45 @@
+Guys (Ihsan Karagol)I am taking 
+
+That mean I want to finish until 19 April
+
+------------------------------------------------------------------------------------------------
+
+
+Today is Feb 27 
+
+1. Until March 2 I will assign Each of us their parts 
+	and Also 
+	I will try to put some videos for what I want for minimum requirements 
+2. Between March 2 and march 7 We will discuss about what is the minimum requirements for each html parts
+	Like homepage;
+			-need navigation
+			-need map location
+			-need some vision things
+			-etc.
+	(IMPORTANT FOR THIS PART WE DONT NEED TO SPEAK TOO MUCH DETAIL FOR HTML FILES)
+
+3. Between March7 -March 14 I want all of them finish their parts minimum put something that is related
+	Do it minimum requirement 
+	Speak with group member about if you have questions
+
+4. Between March 14-28 WE WILL WORK ON DETAILS 
+	At this point we have minimum requirement and normally we somehow finish it.
+	Now we will work details how can we present this is like a professional website
+
+	(WE NEED TO SPEAK MORE IN Hangouts or face to face.)
+	My suggestion is face to face and bring some examples websites)
+
+	For example;
+		- I saw 1 website navigation bar and I like it and I will copy that website link 
+		- Another website I saw the design is good and I copy that website link 
+		-etc.
+		- At the end everybody will bring some ideas with example websites and we will decided which one is 			good or bad
+
+5.   Between March 28 and April 19 I want to work with Baktybek 
+	Our group we will speak with Kemal Aydin about website
+	How it is ? 
+	What is more requirements?
+	Probably we will not have any problem.	
+	At this point I want to know new ideas and 
+	help how to connect with database etc.
+7.  After that we will ready to present our project
