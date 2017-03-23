@@ -1,10 +1,18 @@
 <!DOCTYPE>
 <html lang="en">
+<title>Union and Draw School</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<style>
+.mySlides {display:none}
+
+</style>
+
+
 <head>
 	<meta charset="utf-8">
-
-	<title>Student Services</title>
-	<link rel="stylesheet" type = "text/css" href = "css/site.css">
+<title>Union and Draw School</title>
+	<link rel="stylesheet" type = "text/css" href = "css/index.css">
 	<link rel="stylesheet" type = "text/css" href = "index.html">
 
 </head>
@@ -16,21 +24,18 @@
 
 </header>
 
-
-
 <body>
-	<nav>
-		<ul class="navigation">
-			<li><a href="index.html" >Home</a></li>
-			 <li><a href="events.html" >Events</a></li>
-			 <li><a href="calendar.html" >Calendar</a></li>
-			<li><a href="galeria.html" >Galeria</a></li>
-			<li><a href="contact.html" >Contact Us</a></li>
-			<li><a <button onclick="document.getElementById('id01').style.display='block'" style="width:auto">Sign Up</button></a></li>
+
+	<ul class="navigation">
+		<li><a href="index.html" >Home</a></li>
+		 <li><a href="events.html" >Events</a></li>
+		 <li><a href="calendar.html" >Calendar</a></li>
+		<li><a href="resident.html" >Resident</a></li>
+		<li><a href="contact.html" >Contact Us</a></li>
+		<li><a <button onclick="document.getElementById('id01').style.display='block'" style="width:auto">Sign Up</button></a></li>
 
 
-		</ul>
-	<nav>
+	</ul>
 
 <!-- Buradan assagisi Login Kismi icin -->
 		<div id="id01" class="modal">
@@ -62,7 +67,6 @@
 <!-- Buradan yukarisi Login Kismi icin -->
 
 
-		<!-- This css is navigation -->
 
  <div class="mainpic"  >
   <a href="index.html">
@@ -70,119 +74,148 @@
   </a>
 
   </div>
-						<div class = "main2">
+<div class = "main2">
 							<div class="body1st">
-								 <h1>Student Success Center</h1>
-							 </div>
-						<div class="body2nd">
-
-							 <div class="mySlides">
-							    <img class="slide-image" src="img/student1.png">
-
-							 </div>
-							 <div class="mySlides">
-							    <img class="slide-image" src="img/student2.jpg">
-							   </div>
-
-							 <div class="mySlides">
-							     <img class="slide-image"  src="img/student3.jpg">
-							 </div>
-							 <div class="mySlides">
-							     <img class="slide-image"  src="img/student4.png">
+										 <h1>Student Success Center</h1>
 							 </div>
 
-
-							 <script>
-
-
-							  //Buradan assagisi resmin otomatik gitmesini sagliyor
-							 var myIndex = 0;
-							 carousel();
-							 function carousel() {
-							     var i;
-							     var x = document.getElementsByClassName("mySlides");
-							     for (i = 0; i < x.length; i++) {
-							        x[i].style.display = "none";
-							     }
-							     myIndex++;
-							     if (myIndex > x.length) {myIndex = 1}
-							     x[myIndex-1].style.display = "block";
-							     setTimeout(carousel, 4000);  // Burasi zamanini ayarliyorsun simdi 4 sn
-
-							 }
-
-							 </script>
+ 						 <div class="body2nd">
 
 
+ <div class="w3-container">
+ <div class="w3-content w3-display-container" style="max-width:800px">
+   <img class="mySlides" src="img/student1.png" style="width:100%">
+   <img class="mySlides" src="img/student2.jpg" style="width:100%">
+   <img class="mySlides" src="img/student3.jpg" style="width:100%">
+   <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+     <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+     <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+     <span class="w3-badge demo  " onclick="currentDiv(1)"></span>
+     <span class="w3-badge demo  " onclick="currentDiv(2)"></span>
+     <span class="w3-badge demo " onclick="currentDiv(3)"></span>
+   </div>
+ </div>
+
+ <script>
+ var slideIndex = 1;
+ showDivs(slideIndex);
+
+ function plusDivs(n) {
+   showDivs(slideIndex += n);
+ }
+
+ function currentDiv(n) {
+   showDivs(slideIndex = n);
+ }
 
 
+ function showDivs(n) {
 
-						 <div class="parentsmain">
+   var i;
+   var x = document.getElementsByClassName("mySlides");
+   var dots = document.getElementsByClassName("demo");
+   if (n > x.length) {slideIndex = 1}
+   if (n < 1) {slideIndex = x.length}
+   for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+   }
+   for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" w3-white", "");
+   }
+   x[slideIndex-1].style.display = "block";
+   dots[slideIndex-1].className += " w3-white";
 
-						 	<h4>Be Available for your Children</h4>
-						 		<li>Notice times when your kids are most likely to talk — be available.</li>
-						 		<li>Start the conversation; it lets your kids know you care about what's happening in their lives</li>
-						 		<li>Find time each week for a one-on-one activity with each child.</li>
-						 		<li>Learn about your children's interests.</li>
-						 		<li>Initiate conversations by sharing what you have been thinking.</li>
-						 	<h4>Let your children know you're listening</h4>
-						 		<li>When your children are talking about concerns, stop whatever you are doing and listen.</li>
-						 		<li>Express interest in what they are saying without being intrusive.</li>
-						 		<li>Listen to their point of view, even if it's difficult to hear.</li>
-						 		<li>Let them complete their point before you respond.</li>
-						 		<li>Repeat what you heard them say to ensure that you understand them correctly.</li>
-						 	<h4>Respond in a way your children will hear</h4>
-						 		<li>Soften strong reactions; kids will tune you out if you appear angry or defensive.</li>
-						 		<li>Express your opinion without putting down theirs; acknowledge that it's okay to disagree.</li>
-						 		<li>Resist arguing about who is right.</li>
-						 		<li>Focus on your child's feelings rather than your own during your conversation.</li>
-						 	<h4>Parenting is hardwork</h4>
-						 		<li>Listening and talking is the key to a healthy connection between you and your children. </li>
-						 		<li>Talk to your children — don't lecture, criticize, threaten or say hurtful things.</li>
-						 		<li>Kids learn from their own choices. As long as the consequences are not dangerous,</li>
-						 		<li> If you are having problems over an extended period of time, you might want to consider consulting with a mental health professional to find out how they can help.</li>
-						 	<h4 >Let them solve Simple Questions</h4>
-						 		<li>If you see your child trying to assemble a toy or get a book from a shelf that she can reach if she stands on her stepstool, pause before racing over to help. </li>
-						 		<li>Provided that they are safe, those moments when you don't rush in</li>
-						 		<li>When you give children a moment to solve things for themselves, those are the character-building moments,</li>
-						 		<li>It's natural to want to make everything perfect, but if we do, we cheat kids of the chance to experience success.</li>
-						 	<h4 >Don't try to fix everything</h4>
-						 		<li>Give young kids a chance to find their own solutions.</li>
-						 		<li>When you lovingly acknowledge a child's minor frustrations without immediately rushing in to save her</li>
-						 		<li>You teach her self-reliance and resilience.</li>
-						 	<h4>Kids do as you do</h4>
-						 		<li>Let your child choose an activity where you hang out together for 10 or 15 minutes with no interruptions.</li>
-						 		<li>There's no better way for you to show your love.</li>
-						 		<li>Schedule daily special time. </li>
-						 		<li>Let them choose the activity, and don't worry about rules.</li>
-						 	<h4 >Limit TV and Computer Time</h4>
-						 		<li>Don't delay discipline.</li>
-						 		<li> If your child makes her bed, resist the urge to smooth the blankets.</li>
-						 		<li>Disciplining Effectively</li>
-						 		<li>If your child is fighting over a toy with another child, set a timer for five minutes, suggests Buss. </li>
-						 		<li>Tell one child he can have the toy until he hears the buzzer, and then it will be the other child's turn.</li>
+ }
+
+  // under this one its makes automatic
+
+  var myIndex = 0;
+ carousel();
+
+ function carousel() {
+     var i;
+     var x = document.getElementsByClassName("mySlides");
+     for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+     }
+     myIndex++;
+     if (myIndex > x.length) {myIndex = 1}
+     x[myIndex-1].style.display = "block";
+     setTimeout(carousel, 4000); // Change image every 4 seconds
+ }
+
+
+ </script>
+
 						 </div>
-					 </div>
-							
-							
- 
+
+
+		<div class="parentsmain">
+	 	<h2>Be Available for your Children</h2>
+	 		<li>Notice times when your kids are most likely to talk — be available.</li><br />
+	 		<li>Start the conversation; it lets your kids know you care about what's happening in their lives</li><br />
+	 		<li>Find time each week for a one-on-one activity with each child.</li><br />
+	 		<li>Learn about your children's interests.</li><br />
+	 		<li>Initiate conversations by sharing what you have been thinking.</li><br />
+	 	<h2>Let your children know you're listening</h2>
+	 		<li>When your children are talking about concerns, stop whatever you are doing and listen.</li><br />
+	 		<li>Express interest in what they are saying without being intrusive.</li><br />
+	 		<li>Listen to their point of view, even if it's difficult to hear.</li><br />
+	 		<li>Let them complete their point before you respond.</li><br />
+	 		<li>Repeat what you heard them say to ensure that you understand them correctly.</li><br />
+	 	<h2>Respond in a way your children will hear</h2>
+	 		<li>Soften strong reactions; kids will tune you out if you appear angry or defensive.</li><br />
+	 		<li>Express your opinion without putting down theirs; acknowledge that it's okay to disagree.</li><br />
+	 		<li>Resist arguing about who is right.</li><br />
+	 		<li>Focus on your child's feelings rather than your own during your conversation.</li><br />
+	 	<h2>Parenting is hardwork</h2>
+	 		<li>Listening and talking is the key to a healthy connection between you and your children. </li><br />
+	 		<li>Talk to your children — don't lecture, criticize, threaten or say hurtful things.</li><br />
+	 		<li>Kids learn from their own choices. As long as the consequences are not dangerous,</li><br />
+	 		<li> If you are having problems over an extended period of time, you might want to consider consulting with a mental health professional to find out how they can help.</li><br />
+	 	<h2>Let them solve Simple Questions</h2>
+	 		<li>If you see your child trying to assemble a toy or get a book from a shelf that she can reach if she stands on her stepstool, pause before racing over to help. </li><br />
+	 		<li>Provided that they are safe, those moments when you don't rush in</li><br />
+	 		<li>When you give children a moment to solve things for themselves, those are the character-building moments,</li><br />
+	 		<li>It's natural to want to make everything perfect, but if we do, we cheat kids of the chance to experience success.</li><br />
+	 	<h2>Don't try to fix everything</h2>
+	 		<li>Give young kids a chance to find their own solutions.</li><br />
+	 		<li>When you lovingly acknowledge a child's minor frustrations without immediately rushing in to save her</li><br />
+	 		<li>You teach her self-reliance and resilience.</li><br />
+	 	<h2>Kids do as you do</h2>
+	 		<li>Let your child choose an activity where you hang out together for 10 or 15 minutes with no interruptions.</li><br />
+	 		<li>There's no better way for you to show your love.</li><br />
+	 		<li>Schedule daily special time. </li><br />
+	 		<li>Let them choose the activity, and don't worry about rules.</li><br />
+	 	<h2>Limit TV and Computer Time</h2>
+	 		<li>Don't delay discipline.</li><br />
+	 		<li> If your child makes her bed, resist the urge to smooth the blankets.</li><br />
+	 		<li>Disciplining Effectively</li><br />
+	 		<li>If your child is fighting over a toy with another child, set a timer for five minutes, suggests Buss. </li><br />
+	 		<li>Tell one child he can have the toy until he hears the buzzer, and then it will be the other child's turn.</li><br />
+	 </div>
+
+
+	 </div>
 
 
 
-						</div><!-- div main2 nun sonu-->
+
+</div> <!-- div hepsi nin sonu -->
+<footer> <!-- Sakin bu footer in yerini oynatma -->
+	<div class="social">
+		<h4>Follow Us</h4>
+		<a href="https://www.facebook.com"><img src="img/face.png" class="sociallogo"></a>
+		<a href="https://www.linkedin.com"><img src="img/link2.png" class="sociallogo"></a>
+		<a href="https://www.instagram.com"><img src="img/ins2.jpg" class="sociallogo"></a>
+		<a href="https://twitter.com/login"><img src="img/twit.jpg" class="sociallogo"></a>
+		<a href="https://www.youtube.com"><img src="img/you2.jpg" class="sociallogo"></a>
+	</div>
+</footer>
 
 
 
-			<footer> <!-- Sakin bu footer in yerini oynatma -->
-			<div class="social">
-			<h5>Follow Us</h5>
-			<a href="https://www.facebook.com"><img src="img/face.png" class="sociallogo"></a>
-			<a href="https://www.linkedin.com"><img src="img/link2.png" class="sociallogo"></a>
-			<a href="https://www.instagram.com"><img src="img/ins2.jpg" class="sociallogo"></a>
-			<a href="https://twitter.com/login"><img src="img/twit.jpg" class="sociallogo"></a>
-			<a href="https://www.youtube.com"><img src="img/you2.jpg" class="sociallogo"></a>
-			</div>
-			</footer>
-		</div>
+
 </body>
-</html>
+</div><!-- div hepsi nin sonu -->
+</html> <!-- butun herseyin -->
