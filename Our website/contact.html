@@ -1,10 +1,20 @@
 <!DOCTYPE>
 <html lang="en">
+<title>Union and Draw School</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<style>
+.mySlides {display:none}
+
+</style>
+
+
 <head>
 	<meta charset="utf-8">
+
 	<title>Student Services</title>
 	<link rel="stylesheet" type = "text/css" href = "css/contact.css">
-	<link rel="stylesheet" type = "text/css" href = "index.html">
+	<link rel="stylesheet" type = "text/css" href = "contact.html">
 
 </head>
 <div class ="hepsi">
@@ -12,54 +22,52 @@
 <header>
 
 	<!-- Dont Use Header here   It will cause problem with nav bar -->
-</header>
 
+</header>
 
 <body>
 
-	<nav>
-		<ul class="navigation">
-			<li><a href="index.html" >Home</a></li>
-			 <li><a href="events.html" >Events</a></li>
-			 <li><a href="calendar.html" >Calendar</a></li>
-			<li><a href="galeria.html" >Galeria</a></li>
-			<li><a href="contact.html" >Contact Us</a></li>
-			<li><a <button onclick="document.getElementById('id01').style.display='block'" style="width:auto">Sign Up</button></a></li>
+	<ul class="navigation">
+		<li><a href="index.html" >Home</a></li>
+		 <li><a href="events.html" >Events</a></li>
+		 <li><a href="calendar.html" >Calendar</a></li>
+		<li><a href="resident.html" >Resident</a></li>
+		<li><a href="contact.html" >Contact Us</a></li>
+		<li><a <button onclick="document.getElementById('id01').style.display='block'" style="width:auto">Sign Up</button></a></li>
 
-		</ul>
-	<nav>
-		 
 
-		<!-- Buradan assagisi Login Kismi icin -->
-				<div id="id01" class="modal">
+	</ul>
 
-		  <form class="modal-content animate" action="/action_page.php">
-		    <div class="imgcontainer">
-		      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-		      <img src="img/avatar.png" alt="Avatar" class="avatar">
-		    </div>
+<!-- Buradan assagisi Login Kismi icin -->
+		<div id="id01" class="modal">
 
-		    <div class="container">
-		      <label><b>Username</b></label>
-		      <input type="text" placeholder="Enter Username" name="uname" required>
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img/avatar.png" alt="Avatar" class="avatar">
+    </div>
 
-		      <label><b>Password</b></label>
-		      <input type="password" placeholder="Enter Password" name="psw" required>
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
 
-		      <button type="submit">Login</button>
-					<button type="submit">Register</button>
-		      <input type="checkbox" checked="checked"> Remember me
-		    </div>
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
 
-		    <div class="container" style="background-color:#f1f1f1">
-		      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-		      <span class="psw"><a href="#">Forgot Password?</a></span>
-		    </div>
-		  </form>
-		</div>
-		<!-- Buradan yukarisi Login Kismi icin -->
+      <button type="submit">Login</button>
+			<button type="submit">Register</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
 
-		<!-- Body Starts -->
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw"><a href="#">Forgot Password?</a></span>
+    </div>
+  </form>
+</div>
+<!-- Buradan yukarisi Login Kismi icin -->
+
+
 
  <div class="mainpic"  >
   <a href="index.html">
@@ -67,47 +75,59 @@
   </a>
 
   </div>
-						<div class = "main2">
-							<div class="aboutwebsite">
-										 <h1>Today, What would you like to do?</h1>
 
-							 </div>
+	<div class = "main2">
+	  <div class = "body1st">
+	   <div class="aboutwebsite">
+	          <h1>Contact Us</h1>
 
-							 <fieldset>
-							 <legend>Contact us</legend>
-							 <input type='hidden' name='submitted' id='submitted' value='1'/>
-
-							 		<label for='name' >Your Full Name*: </label><br/>
-							 		<input type='text' name='name' id='name'  maxlength="50" /><br/>
-
-							 		<label for='email' >Email Address*:</label><br/>
-							 		<input type='text' name='email' id='email' maxlength="50" /><br/>
-
-							 		<label for='phone' >Phone Number:</label><br/>
-							 		<input type='text' name='phone' id='phone' maxlength="15" /><br/>
-
-							 		<label for='message' >Message:</label><br/>
-							 		<textarea rows="10" cols="50" name='message' id='message'> </textarea>
-
-							 		<input type='submit' name='Submit' value='Submit' />
-
-							 </fieldset>
-
-							</div>
-
-  <!-- Body Finish -->
+	    </div>
 
 
-							<footer>
-								<div class="social">
-									<h4>Follow Us</h4>
-									<a href="https://www.facebook.com"><img src="img/face.png" class="sociallogo"></a>
-									<a href="https://www.linkedin.com"><img src="img/link2.png" class="sociallogo"></a>
-									<a href="https://www.instagram.com"><img src="img/ins2.jpg" class="sociallogo"></a>
-									<a href="https://twitter.com/login"><img src="img/twit.jpg" class="sociallogo"></a>
-									<a href="https://www.youtube.com"><img src="img/you2.jpg" class="sociallogo"></a>
-								</div>
-							</footer>
-</body>
+
+	   </div>
+
+
+	   <fieldset>
+	   <legend>Contact us</legend>
+	   <input type='hidden' name='submitted' id='submitted' value='1'/>
+
+	     <label for='name' >Your Full Name*: </label><br/>
+	     <input type='text' name='name' id='name'  maxlength="50" /><br/>
+
+	     <label for='email' >Email Address*:</label><br/>
+	     <input type='text' name='email' id='email' maxlength="50" /><br/>
+
+	     <label for='phone' >Phone Number:</label><br/>
+	     <input type='text' name='phone' id='phone' maxlength="15" /><br/>
+
+	     <label for='message' >Message:</label><br/>
+	     <textarea rows="10" cols="50" name='message' id='message'> </textarea>
+
+	     <input type='submit' name='Submit' value='Submit' />
+
+	   </fieldset>
+
+
+
+
+
+
 </div>
-</html>
+<footer> <!-- Sakin bu footer in yerini oynatma -->
+	<div class="social">
+		<h4>Follow Us</h4>
+		<a href="https://www.facebook.com"><img src="img/face.png" class="sociallogo"></a>
+		<a href="https://www.linkedin.com"><img src="img/link2.png" class="sociallogo"></a>
+		<a href="https://www.instagram.com"><img src="img/ins2.jpg" class="sociallogo"></a>
+		<a href="https://twitter.com/login"><img src="img/twit.jpg" class="sociallogo"></a>
+		<a href="https://www.youtube.com"><img src="img/you2.jpg" class="sociallogo"></a>
+	</div>
+</footer>
+
+
+
+
+</body>
+</div><!-- div hepsi nin sonu -->
+</html> <!-- butun herseyin -->
