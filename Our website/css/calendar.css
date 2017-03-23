@@ -126,6 +126,7 @@ span.psw {
 {
 	width: 1500px;
 	height: auto;
+  margin: 0 auto;
 }
 body
  {
@@ -139,7 +140,7 @@ body
 	  padding: 0;
 	  margin: 0;
 	  z-index: 1;
-	  font-size: 28px;
+
 	  background-color: #44E7E0 ;
 		overflow: hidden;
 		position:sticky;
@@ -161,6 +162,7 @@ body
 	  width:auto;
      float: left;
 		 text-align: center;
+      font-size: 28px;
 	}
 
 /*-----------Yukari Nav bar----------------------------------------------------------------------------------------------------------------------------------------*/
@@ -175,40 +177,45 @@ body
 		margin:0px;
 
 		}
-
-
 	.main2
 	{
 	background:#8CB4CA;
 		border-radius: 20px 20px 20px 20px;
-		height: 700px;
+		height: 2800px;
 	}
-
 	.main2 p
 	{
 	font-size: 40px;
 	}
-
-
-	.aboutwebsite
+	.body1st
 	{
    width: 100%;
 		background: #63517a ;
 		border-radius: 20px 20px 20px 20px;
-
 	}
-.aboutwebsite h1
+.body1st h1
 {
 color: white;
 	font-size: 40px;
 	text-align: center;
 
 }
+
+.slide-image {
+  height: 400px;
+  width:1500px;
+  float: left;
+}
+.mySlides
+{
+  height: 400px;
+  width: 1500px;
+}
 /*---------------------------------------------Yukari Body------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------Footer--------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------Footer-----------------------------------------------------------------------------------------------------*/
 .social {
 	width:auto;
-	height: 60px;
+	height: 70px;
 	color: whitesmoke;
 	background: #545454;
 	text-align: center;
@@ -223,15 +230,20 @@ color: white;
 	padding: 0;
 	}
 .sociallogo {
-	width: 40px;
-	height: 30px;
+	width: 60px;
+	height: 40px;
 	background: #545454;
 	text-align: center;
-	border-radius: 15px;
-	padding: 5px;
+ 	padding: 5px;
+  border-radius: 20px 20px 20px 20px;
 	}
 .sociallogo:hover
 {
 	background: gray;
 }
+
+
+
+
+
 /*-------------------Yukari Footer--------------------------------------------------------------------------------------------------------------------------------*/
