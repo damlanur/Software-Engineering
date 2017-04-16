@@ -131,6 +131,14 @@ span.psw {
 body
  {
 	background:white;
+	width: 100%;
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	}
+#big_wrapper{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-box-flex: 1;
 	}
 
 /*----------------------------------------Nav Start-----------------------------------------------------------------------------------------------------------*/
@@ -181,7 +189,7 @@ body
 	{
 	background:#8CB4CA;
 		border-radius: 20px 20px 20px 20px;
-		height: 2800px;
+		height: 1400px;
 	}
 	.main2 p
 	{
