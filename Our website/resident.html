@@ -5,7 +5,6 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 <style>
 .mySlides {display:none}
-
 </style>
 
 
@@ -59,12 +58,12 @@
       <input type="checkbox" checked="checked"> Remember me
     </div>
 
-    <div class="container" style="background-color:#f1f1f1">
+    		<div class="container" style="background-color:#f1f1f1">
       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
       <span class="psw"><a href="#">Forgot Password?</a></span>
-    </div>
-  </form>
-</div>
+    	  </div>
+  	</form>
+	</div>
 <!-- Buradan yukarisi Login Kismi icin -->
 
 
@@ -77,14 +76,161 @@
   </div>
 <div class = "main2">
 							<div class="body1st">
-										 <h1>Student Success Center</h1>
+										 <h1>RESIDENT</h1>
 							 </div>
 
 
 
+</head>
+<body>
+
+
+<center>
+	<div class="w3-contentw3-section" >
+	  <p>Residential Life</p>
+
+	  <img class="mySlides w3-animate-fading" src="dormroom4.jpg" style="width:70% " >
+	  <img class="mySlides w3-animate-fading" src="tutoring1.jpg" style="width:70% ">
+	  <img class="mySlides w3-animate-fading" src="financialaid2.jpg" style="width:70% " >
+	  <img class="mySlides w3-animate-fading" src="tutoring2.jpg" style="width:70% ">
+	</div>
+<style>
+.w3-contentw3-section{
+	max-width: : 70%;
+}
+</style>
+				<script>
+						var myIndex = 0;
+						carousel();
+
+						function carousel() {
+						    var i;
+						    var x = document.getElementsByClassName("mySlides");
+						    for (i = 0; i < x.length; i++) {
+						       x[i].style.display = "none";
+						    }
+						    myIndex++;
+						    if (myIndex > x.length) {myIndex = 1}
+						    x[myIndex-1].style.display = "block";
+						    setTimeout(carousel, 9000);
+						}
+				</script>
 
 
 
+	<style>
+ #second1 {
+ width: 70%;
+ padding: 10px;
+ border: 5px solid gray;
+ margin: 0;
+ background-color:#d1cdcb;
+
+ }
+ #first1 { width: 70%;
+ padding: 10px;
+ border: 5px solid #1a1e1f;
+ margin: 0;
+ background-color:#899428;}
+
+ #second2 {
+ width: 90%;
+ padding: 10px;
+ border: 5px solid gray;
+ margin: 0;
+ background-color:#e3d8bf;
+
+ }
+ #first2 { width: 70%;
+ padding: 10px;
+ border: 5px solid gray;
+ margin: 0;
+ background-color:#7a4b16;}
+
+ #second3 {
+ width: 70%;
+ padding: 10px;
+ border: 5px solid gray;
+ margin: 0;
+ background-color:#e5c69c;
+
+ }
+ #first3 { width: 70%;
+ padding: 10px;
+ border: 5px solid gray;
+ margin: 0;
+ background-color:#a16f2a;}
+
+ #second4 {
+ width: 70%;
+ padding: 10px;
+ border: 5px solid gray;
+ margin: 0;
+ background-color:#b49e93;
+
+ }
+ #first4 { width: 70%;
+ padding: 10px;
+ border: 5px solid gray;
+ margin: 0;
+ background-color:#24b2cf;}
+
+
+ </style>
+
+
+
+	<br><br><br><br>
+		<div id="first1"><h2>Dormitory</h2>
+
+				<img src="dorm.jpg" width="570" height="500" alt="Klematis">
+					<div id="second1">
+								Union and Draw School welcomes you to the Department of Residence Life. On-campus living is a vital component of the collegiate
+								experience and we encourage you to invest in this opportunity and lay a strong foundation for your future.
+								Our halls are staffed with remarkably talented individuals who want to help you make the most of this experience. We invite you to
+								 explore our residence halls and get involved with the campus community.
+				  </div>
+		</div>
+
+<br><br>
+
+		<div id="first2"><h2>Library</h2>
+				<img src="library.jpg" width="570" height="500" alt="Klematis">
+				<div id="second2">
+							The mission of the UDS Library is to assist students in their search for attaining knowledge by providing information resources and services that encourage learning, support education, and promote intellectual growth.
+							 We are here to satisfy all enrolled students’ information and research needs.
+						 The UDS Library provide access to several thousand books and have subscriptions to critically acclaimed newspapers and magazines online and on print. In addition
+						 , we also have expansive databases to help each and every student’s scholastic achievements.
+			  </div>
+			</div>
+
+<br><br>
+<div id="first4"><h2>Financial Aid</h2>
+
+	<img src="financialaid3.jpg" width="570" height="350" alt="Klematis">
+	<div id="second4">
+			UDS offers the Pell Grant to eligible students to assist in funding their education.
+			The Pell Grant is considered gift aid and it does not need to be repaid.
+			Students must complete the FAFSA to determine their eligibility and award amount.
+			 Additionally, UDS also offers the FSEOG (Federal Supplemental Education Opportunity Grant) to eligible
+			 students with financial need. FSEOG funds also are considered gift aid and are not required to be repaid.
+			 Funding is limited and priority is given to undergraduate students who receive
+			 the Federal Pell Grant and have the greatest demonstrated financial need, as determined by the FAFSA.</div>
+</div>
+<br><br>
+
+		<div id="first3"><h2>Tutoring</h2>
+				<img src="tutoring3.jpg" width="570" height="500" alt="Klematis">
+				<div id="second3">We provide an array of comprehensive academic and personal support services to all UDS students. The Student Success Center shares a common space with the Career Center on the eighth floor.
+					This location serves as a prime spot for students to benefit from all the services
+					 UDS has to offer. Students will develop learning strategies that empower them to excel in their potential.
+				</div>
+		</div>
+
+		<br><br>
+
+
+</center>
 </div>
 <footer> <!-- Sakin bu footer in yerini oynatma -->
 	<div class="social">
