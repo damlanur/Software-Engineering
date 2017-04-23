@@ -142,6 +142,7 @@ body
 	  z-index: 1;
 
 	  background-color: #44E7E0 ;
+    /*for menu bar */
 		overflow: hidden;
 		position:sticky;
 
@@ -177,20 +178,21 @@ body
 		margin:0px;
 
 		}
-	.main2
-	{
-	background:#8CB4CA;
-		border-radius: 20px 20px 20px 20px;
-		height: 2800px;
-	}
-	.main2 p
-	{
-	font-size: 40px;
-	}
+              	.main2
+              	{
+              	background:#FAD5A6;
+                /*for big area :)*/
+              		border-radius: 20px 20px 20px 20px;
+              		height: auto;
+              	}
+              	.main2 p
+              	{
+              	font-size: 40px;
+              	}
 	.body1st
 	{
    width: 100%;
-		background: #63517a ;
+		background: #E25F70 ;
 		border-radius: 20px 20px 20px 20px;
 	}
 .body1st h1
