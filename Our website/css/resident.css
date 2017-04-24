@@ -1,253 +1,240 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,200,300,100,500,700,600,800,900);
-/*-------------------------------------------Login Start--------------------------------------------------------------------------------------------------------*/
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+<!DOCTYPE>
+<html lang="en">
+<title>Union and Draw School</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<style>
+.mySlides {display:none}
+</style>
+
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Student Services</title>
+	<link rel="stylesheet" type = "text/css" href = "css/resident.css">
+	<link rel="stylesheet" type = "text/css" href = "resident.html">
+
+</head>
+<div class ="hepsi">
+
+<header>
+
+	<!-- Dont Use Header here   It will cause problem with nav bar -->
+
+</header>
+
+<body>
+
+	<ul class="navigation">
+		<li><a href="index.html" >Home</a></li>
+		 <li><a href="events.html" >Events</a></li>
+		 <li><a href="calendar.html" >Calendar</a></li>
+		<li><a href="resident.html" >Resident</a></li>
+		<li><a href="contact.html" >Contact Us</a></li>
+		<li><a <button onclick="document.getElementById('id01').style.display='block'" style="width:auto">Sign Up</button></a></li>
+
+
+	</ul>
+
+<!-- Buradan assagisi Login Kismi icin -->
+		<div id="id01" class="modal">
+
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img/avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+			<button type="submit">Register</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    		<div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw"><a href="#">Forgot Password?</a></span>
+    	  </div>
+  	</form>
+	</div>
+<!-- Buradan yukarisi Login Kismi icin -->
+
+
+
+ <div class="mainpic"  >
+  <a href="index.html">
+ 	 <img src="img/studentservices.jpg">
+  </a>
+
+  </div>
+<div class = "main2">
+							<div class="body1st">
+										 <h1>RESIDENT</h1>
+							 </div>
+
+
+
+</head>
+<body>
+
+
+<center>
+	<div class="w3-contentw3-section" >
+	  <p>Residential Life</p>
+
+	  <img class="mySlides w3-animate-fading" src="img/tutoring1.jpg" style="width:70% ">
+	  <img class="mySlides w3-animate-fading" src="img/financialaid2.jpg" style="width:70% " >
+	  <img class="mySlides w3-animate-fading" src="img/tutoring2.jpg" style="width:70% ">
+	</div>
+<style>
+.w3-contentw3-section{
+	max-width: : 70%;
 }
-
-/* Set a style for all buttons */
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-}
-
-/* Extra styles for the cancel button */
-.cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-}
-
-/* Center the image and position the close button */
-.imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-    position: relative;
-}
-
-img.avatar {
-    width: 40%;
-    border-radius: 50%;
-}
-
-.container {
-    padding: 16px;
-}
-
-span.psw {
-    float: right;
-    padding-top: 16px;
-}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-top: 60px;
-}
-
-/* Modal Content/Box */
-.modal-content {
-    background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    width: 50%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button (x) */
-.close {
-    position: absolute;
-    right: 25px;
-    top: 0;
-    color: #000;
-    font-size: 35px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: red;
-    cursor: pointer;
-}
-
-/* Add Zoom Animation */
-.animate {
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
-}
-
-@-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)}
-    to {-webkit-transform: scale(1)}
-}
-
-@keyframes animatezoom {
-    from {transform: scale(0)}
-    to {transform: scale(1)}
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-    span.psw {
-       display: block;
-       float: none;
-    }
-    .cancelbtn {
-       width: 100%;
-    }
-}
+</style>
+				<script>
+						var myIndex = 0;
+						carousel();
+						function carousel() {
+						    var i;
+						    var x = document.getElementsByClassName("mySlides");
+						    for (i = 0; i < x.length; i++) {
+						       x[i].style.display = "none";
+						    }
+						    myIndex++;
+						    if (myIndex > x.length) {myIndex = 1}
+						    x[myIndex-1].style.display = "block";
+						    setTimeout(carousel, 9000);
+						}
+				</script>
 
 
-/*---------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*   BURADAN YUKARISI LOGIN KISMI ICIN */
 
-.zoom
-{
-	zoom:100%;
-}
-.hepsi
-{
-	width: 1500px;
-	height: auto;
-  margin: 0 auto;
-}
-body
- {
-	background:white;
-	}
+	<style>
+ #second1 {
+ width: 70%;
+ padding: 10px;
+ border: 5px solid gray;
+ margin: 0;
+ background-color:#d1cdcb;
+ }
+ #first1 { width: 70%;
+ padding: 10px;
+ border: 5px solid #1a1e1f;
+ margin: 0;
+ background-color:#899428;}
+ #second2 {
+ width: 90%;
+ padding: 10px;
+ border: 5px solid gray;
+ margin: 0;
+ background-color:#e3d8bf;
+ }
+ #first2 { width: 70%;
+ padding: 10px;
+ border: 5px solid gray;
+ margin: 0;
+ background-color:#7a4b16;}
+ #second3 {
+ width: 70%;
+ padding: 10px;
+ border: 5px solid gray;
+ margin: 0;
+ background-color:#e5c69c;
+ }
+ #first3 { width: 70%;
+ padding: 10px;
+ border: 5px solid gray;
+ margin: 0;
+ background-color:#a16f2a;}
+ #second4 {
+ width: 70%;
+ padding: 10px;
+ border: 5px solid gray;
+ margin: 0;
+ background-color:#b49e93;
+ }
+ #first4 { width: 70%;
+ padding: 10px;
+ border: 5px solid gray;
+ margin: 0;
+ background-color:#24b2cf;}
+ </style>
 
-/*----------------------------------------Nav Start-----------------------------------------------------------------------------------------------------------*/
-	.navigation
-	{
-	  list-style: none;
-	  padding: 0;
-	  margin: 0;
-	  z-index: 1;
 
-	  background-color: #44E7E0 ;
-    /*for menu bar */
-		overflow: hidden;
-		position:sticky;
 
-		top:0;
+	<br><br><br><br>
+		<div id="first1"><h2>Dormitory</h2>
 
-	}
+				<img src="img/dorm.jpg" width="570" height="500" alt="Klematis">
+					<div id="second1">
+								Union and Draw School welcomes you to the Department of Residence Life. On-campus living is a vital component of the collegiate
+								experience and we encourage you to invest in this opportunity and lay a strong foundation for your future.
+								Our halls are staffed with remarkably talented individuals who want to help you make the most of this experience. We invite you to
+								 explore our residence halls and get involved with the campus community.
+				  </div>
+		</div>
 
-	.navigation li:hover
-	 {
-	  background:#46A8A3;
-	}
-	.navigation li a {
+<br><br>
 
-	  padding: 0 40px;
-	  text-decoration: none;
-	  line-height: 40px;
-	  color: black;
-	  width:auto;
-     float: left;
-		 text-align: center;
-      font-size: 28px;
-	}
+		<div id="first2"><h2>Library</h2>
+				<img src="img/library.jpg" width="570" height="500" alt="Klematis">
+				<div id="second2">
+							The mission of the UDS Library is to assist students in their search for attaining knowledge by providing information resources and services that encourage learning, support education, and promote intellectual growth.
+							 We are here to satisfy all enrolled students’ information and research needs.
+						 The UDS Library provide access to several thousand books and have subscriptions to critically acclaimed newspapers and magazines online and on print. In addition
+						 , we also have expansive databases to help each and every student’s scholastic achievements.
+			  </div>
+			</div>
 
-/*-----------Yukari Nav bar----------------------------------------------------------------------------------------------------------------------------------------*/
-/*------------------------------------------Body---------------------------------------------------------------------------------------------------------*/
-		.mainpic img
-		{
-		width: 1500px;
-		height: 200px;
-		float:middle;
-		border-radius: 20px 20px 20px 20px;
-		padding:0px;
-		margin:0px;
+<br><br>
+<div id="first4"><h2>Financial Aid</h2>
 
-		}
-              	.main2
-              	{
-              	background:#FAD5A6;
-                /*for big area :)*/
-              		border-radius: 20px 20px 20px 20px;
-              		height: auto;
-              	}
-              	.main2 p
-              	{
-              	font-size: 40px;
-              	}
-	.body1st
-	{
-   width: 100%;
-		background: #E25F70 ;
-		border-radius: 20px 20px 20px 20px;
-	}
-.body1st h1
-{
-color: white;
-	font-size: 40px;
-	text-align: center;
+	<img src="img/financialaid3.jpg" width="570" height="350" alt="Klematis">
+	<div id="second4">
+			UDS offers the Pell Grant to eligible students to assist in funding their education.
+			The Pell Grant is considered gift aid and it does not need to be repaid.
+			Students must complete the FAFSA to determine their eligibility and award amount.
+			 Additionally, UDS also offers the FSEOG (Federal Supplemental Education Opportunity Grant) to eligible
+			 students with financial need. FSEOG funds also are considered gift aid and are not required to be repaid.
+			 Funding is limited and priority is given to undergraduate students who receive
+			 the Federal Pell Grant and have the greatest demonstrated financial need, as determined by the FAFSA.</div>
+</div>
+<br><br>
 
-}
+		<div id="first3"><h2>Tutoring</h2>
+				<img src="img/tutoring3.jpg" width="570" height="500" alt="Klematis">
+				<div id="second3">We provide an array of comprehensive academic and personal support services to all UDS students. The Student Success Center shares a common space with the Career Center on the eighth floor.
+					This location serves as a prime spot for students to benefit from all the services
+					 UDS has to offer. Students will develop learning strategies that empower them to excel in their potential.
+				</div>
+		</div>
 
-.slide-image {
-  height: 400px;
-  width:1500px;
-  float: left;
-}
-.mySlides
-{
-  height: 400px;
-  width: 1500px;
-}
-/*---------------------------------------------Yukari Body------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------Footer-----------------------------------------------------------------------------------------------------*/
-.social {
-	width:auto;
-	height: 70px;
-	color: whitesmoke;
-	background: #545454;
-	text-align: center;
-	clear: both;
-	border-radius: 20px 20px 20px 20px;
-	position:static;
-	bottom: 0;
+		<br><br>
 
-	}
-.social h4 {
-	margin: 0;
-	padding: 0;
-	}
-.sociallogo {
-	width: 60px;
-	height: 40px;
-	background: #545454;
-	text-align: center;
- 	padding: 5px;
-  border-radius: 20px 20px 20px 20px;
-	}
-.sociallogo:hover
-{
-	background: gray;
-}
+
+</center>
+</div>
+<footer> <!-- Sakin bu footer in yerini oynatma -->
+	<div class="social">
+		<h4>Follow Us</h4>
+		<a href="https://www.facebook.com"><img src="img/face.png" class="sociallogo"></a>
+		<a href="https://www.linkedin.com"><img src="img/link2.png" class="sociallogo"></a>
+		<a href="https://www.instagram.com"><img src="img/ins2.jpg" class="sociallogo"></a>
+		<a href="https://twitter.com/login"><img src="img/twit.jpg" class="sociallogo"></a>
+		<a href="https://www.youtube.com"><img src="img/you2.jpg" class="sociallogo"></a>
+	</div>
+</footer>
 
 
 
 
-
-
-
-/*-------------------Yukari Footer--------------------------------------------------------------------------------------------------------------------------------*/
+</body>
+</div><!-- div hepsi nin sonu -->
+</html> <!-- butun herseyin -->
