@@ -1,123 +1,251 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,200,300,100,500,700,600,800,900);
+
 /*-------------------------------------------Login Start--------------------------------------------------------------------------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Roboto:100);
+@import url(http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css);
 input[type=text], input[type=password] {
     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
+    padding: 10px 10px;
+
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+      font-size: 15px;
 }
 
 /* Set a style for all buttons */
-button {
+ button {
     background-color: #4CAF50;
     color: white;
-    padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
     width: 100%;
+    position:inherit;
+    font-size: 25px;/*Login Register Button font size*/
 }
 
 /* Extra styles for the cancel button */
 .cancelbtn {
     width: auto;
-    padding: 10px 18px;
     background-color: #f44336;
+      font-size: 25px;/*Cancel Button font size*/
 }
 
 /* Center the image and position the close button */
 .imgcontainer {
     text-align: center;
-    margin: 24px 0 12px 0;
     position: relative;
+
 }
 
 img.avatar {
-    width: 40%;
+    width: 20%;
     border-radius: 50%;
 }
 
-.container {
-    padding: 16px;
-}
 
 span.psw {
     float: right;
-    padding-top: 16px;
+    padding-top: 10px;
+
+
 }
 
-/* The Modal (background) */
+
+input:focus{
+ background-color:gray;
+}
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-top: 60px;
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Sit on top */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
 }
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    width: 50%; /* Could be more or less, depending on screen size */
+   background-color: #fefefe;
+   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+   border: 1px solid #888;
+   width: 60%; /* Could be more or less, depending on screen size */
+   height: 600px; /* burasi Sign Up Kisminin buyuklugunu ayarliyor*/
+   font-size: 15px;
+ }
+
+
+.flat-form {
+ background: #34495e;  /*tablebg e74c3c #34495e  #88565b ed7271*/
+ margin: 25px auto;
+ width: 490px;
+ height: 450px;
+ position: relative;
+ font-family: 'Roboto';
 }
 
-/* The Close Button (x) */
-.close {
-    position: absolute;
-    right: 25px;
-    top: 0;
-    color: #000;
-    font-size: 35px;
-    font-weight: bold;
+.tabs {
+ background: white;  /*Burasi navigation bar in arka ren*/
+ height: 40px;
+ margin: 0;
+ padding: 0;
+ list-style-type: none;
+ width: 100%;
+ position: relative;
+ display: block;
+ margin-bottom: 20px;
+}
+.tabs a {
+ background: white;  /*topbar c0392b  #88565b */
+ display: block;
+ float: left;
+ text-decoration: none;
+ color: white;
+ font-size: 16px;
+ color: black;
+ padding: 12px 22px 12px 22px;
+ /*border-right: 1px solid @tab-border;*/
+
+}
+.tabs li:last-child a {
+ border-right: none;
+ width: 174px;
+ padding-left: 0;
+ padding-right: 0;
+ text-align: center;
+}
+.tabs a.active {
+ background: black;  /*topbar e74c3c  */
+ border-right: none;
+ -webkit-transition: all 0.5s linear;
+ -moz-transition: all 0.5s linear;
+ transition: all 0.5s linear;
+ color: white;
+}
+.form-action {
+ padding: 0 20px;
+ position: relative;
 }
 
-.close:hover,
-.close:focus {
-    color: red;
-    cursor: pointer;
+.form-action h1 {
+ font-size: 32px;
+ padding-bottom: 10px;
+}
+form {
+ padding-right: 30px !important;
+}
+form input[type=text],
+form input[type=password],
+form input[type=submit] {
+ font-family: 'Roboto';
 }
 
-/* Add Zoom Animation */
-.animate {
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
+form input[type=text],
+form input[type=password] {
+ width: 100%;
+ height: 40px;
+ margin-bottom: 10px;
+ padding-left: 15px;
+ background: #fff; /* #44454a  */
+ border: none;
+ color: #e74c3c;   /* e74c3c e9e9e9  */
+ outline: none;
 }
 
-@-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)}
-    to {-webkit-transform: scale(1)}
+.dark-box {
+ background: #5e0400;
+ box-shadow: 1px 3px 3px #3d0100 inset;
+ height: 40px;
+ width: 50px;
+}
+.form-action .dark-box.bottom {
+ position: absolute;
+ right: 0;
+ bottom: -24px;
+}
+.tabs + .dark-box.top {
+ position: absolute;
+ right: 0;
+ top: 0px;
+}
+.show {
+ display: block;
+}
+.hide {
+ display: none;
 }
 
-@keyframes animatezoom {
-    from {transform: scale(0)}
-    to {transform: scale(1)}
+.button {
+   border: none;
+   display: block;
+   background: #136899;
+   height: 40px;
+   width: 80px;
+   color: #ffffff;
+   text-align: center;
+   border-radius: 5px;
+   /*box-shadow: 0px 3px 1px #2075aa;*/
+   -webkit-transition: all 0.15s linear;
+   -moz-transition: all 0.15s linear;
+   transition: all 0.15s linear;
 }
 
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-    span.psw {
-       display: block;
-       float: none;
-    }
-    .cancelbtn {
-       width: 100%;
-    }
+.button:hover {
+ background: #1e75aa;
+ /*box-shadow: 0 3px 1px #237bb2;*/
+}
+
+.button:active {
+ background: #136899;
+ /*box-shadow: 0 3px 1px #0f608c;*/
+}
+
+::-webkit-input-placeholder {
+ color:dark ;    /*  #e74c3c */
+}
+:-moz-placeholder {
+ /* Firefox 18- */
+ color: #e74c3c;
+}
+::-moz-placeholder {
+ /* Firefox 19+ */
+ color: #e74c3c;
+}
+:-ms-input-placeholder {
+ color: #e74c3c;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 10px 10px;
+
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+      font-size: 15px;
+}
+button {
+   background-color: #4CAF50;
+   color: white;
+   margin: 8px 0;
+   border: none;
+   cursor: pointer;
+   width: 100%;
+   position:inherit;
+   font-size: 25px;/*Login Register Button font size*/
 }
 
 
-/*---------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*   BURADAN YUKARISI LOGIN KISMI ICIN */
+/* Buradan                                                                 Yukarisi Login ICIN */
 
+/*
+-------------------------------*/
 .zoom
 {
 	zoom:100%;
@@ -167,49 +295,50 @@ body
 
 /*-----------Yukari Nav bar----------------------------------------------------------------------------------------------------------------------------------------*/
 /*------------------------------------------Body---------------------------------------------------------------------------------------------------------*/
-		.mainpic img
-		{
-		width: 1500px;
-		height: 200px;
-		float:middle;
-		border-radius: 20px 20px 20px 20px;
-		padding:0px;
-		margin:0px;
 
-		}
-	.main2
-	{
-	background:#8CB4CA;
-		border-radius: 20px 20px 20px 20px;
-		height: 2800px;
-	}
-	.main2 p
-	{
-	font-size: 40px;
-	}
-	.body1st
-	{
-   width: 100%;
-		background: #63517a ;
-		border-radius: 20px 20px 20px 20px;
-	}
+.mainpic img
+{
+width: 1500px;
+height: 200px;
+float:middle;
+border-radius: 20px 20px 20px 20px;
+padding:0px;
+margin:0px;
+
+}
+.main2
+{
+background:#8CB4CA;
+border-radius: 20px 20px 20px 20px;
+height: 580px;
+}
+.main2 p
+{
+font-size: 40px;
+}
+.body1st
+{
+width: 100%;
+background: #63517a ;
+border-radius: 20px 20px 20px 20px;
+}
 .body1st h1
 {
 color: white;
-	font-size: 40px;
-	text-align: center;
+font-size: 40px;
+text-align: center;
 
 }
 
 .slide-image {
-  height: 400px;
-  width:1500px;
-  float: left;
+height: 400px;
+width:1500px;
+float: left;
 }
 .mySlides
 {
-  height: 400px;
-  width: 1500px;
+height: 400px;
+width: 1500px;
 }
 /*---------------------------------------------Yukari Body------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------Footer-----------------------------------------------------------------------------------------------------*/
