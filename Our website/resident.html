@@ -3,6 +3,9 @@
 <title>Union and Draw School</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
 <style>
 .mySlides {display:none}
 </style>
@@ -14,6 +17,8 @@
 	<title>Student Services</title>
 	<link rel="stylesheet" type = "text/css" href = "css/resident.css">
 	<link rel="stylesheet" type = "text/css" href = "resident.html">
+	<script type="text/javascript" src="js/as.js"></script>
+
 
 </head>
 <div class ="hepsi">
@@ -26,68 +31,143 @@
 
 <body>
 
-	<ul class="navigation">
-		<li><a href="index.html" >Home</a></li>
-		 <li><a href="events.html" >Events</a></li>
-		 <li><a href="calendar.html" >Calendar</a></li>
-		<li><a href="resident.html" >Resident</a></li>
-		<li><a href="contact.html" >Contact Us</a></li>
-		<li><a <button onclick="document.getElementById('id01').style.display='block'" style="width:auto">Sign Up</button></a></li>
+		<ul class="navigation">
+			<li><a href="index.html" >Home</a></li>
+			 <li><a href="events.html" >Events</a></li>
+			 <li><a href="calendar.html" >Calendar</a></li>
+			<li><a href="resident.html" >Resident</a></li>
+			<li><a href="studentservice.html" >Student Services</a></li>
+			<li><a href="contact.html" >Contact Us</a></li>
+			<li><a <button onclick="document.getElementById('id01').style.display='block'" style="width:auto">Sign Up</button></a></li>
 
 
-	</ul>
+		</ul>
 
 <!-- Buradan assagisi Login Kismi icin -->
-		<div id="id01" class="modal">
 
-  <form class="modal-content animate" action="/action_page.php">
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="img/avatar2.png" alt="Avatar" class="avatar">
-    </div>
+<div id="id01" class="modal">
+	 <div class="container">
+		 <span onclick="document.getElementById('id01').style.display='none'">&times;</span>
+			 <div class="flat-form">
 
-    <div class="container">
-      <label><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+					 <ul class="tabs">
+							 <li>
+									 <a href="#login" class="active">Login</a>
+							 </li>
+							 <li>
+									 <a href="#register">Register</a>
 
-      <label><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+							 </li>
 
-      <button type="submit">Login</button>
-			<button type="submit">Register</button>
-      <input type="checkbox" checked="checked"> Remember me
-    </div>
 
-    		<div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw"><a href="#">Forgot Password?</a></span>
-    	  </div>
-  	</form>
-	</div>
+					 </ul>
+					 <div id="login" class="form-action show" >
+
+
+							 <h1>Login</h1>
+
+							 <form>
+									 <ul>
+											 <li>
+													 <input type="text" placeholder="Username" />
+											 </li>
+											 <li>
+													 <input type="password" placeholder="Password" />
+											 </li>
+
+											 <li>
+													 <input type="submit" value="Login" class="button" />
+											 </li>
+									 </ul>
+							 </form>
+							<h1>Reset Password</h1>
+							 <form>
+									 <ul>
+											 <li>
+													 <input type="text" placeholder="Email" />
+											 </li>
+											 <li>
+													 <input type="text" placeholder="Birthday" />
+											 </li>
+											 <li>
+													 <input type="submit" value="Send" class="button" />
+											 </li>
+									 </ul>
+							 </form>
+					 </div>
+					 <!--/#login.form-action-->
+					 <div id="register" class="form-action hide">
+
+							 <h1>Register</h1>
+
+							 <form>
+
+									 <ul>
+
+											 <li>
+													 <input type="text" placeholder="Name&Surname" />
+													<input type="text" placeholder="Username" />
+													<input type="password" placeholder="Password" />
+													<input type="password" placeholder="Password Confirm" />
+
+													<input type="email" placeholder="E-mail">
+													<p>
+													Birthday:<p><input type="date" placeholder="Birthday" />
+																													</li>
+
+
+											 <li>
+													 <input type="submit" value="Sign Up" class="button" />
+											 </li>
+									 </ul>
+							 </form>
+
+
+					 </div>
+
+
+					 <!--/#register.form-action-->
+
+					 <!--/#register.form-action-->
+			 </div>
+	 </div>
+
+
+</div>
+
+
+
+
+
 <!-- Buradan yukarisi Login Kismi icin -->
 
 
 
  <div class="mainpic"  >
   <a href="index.html">
- 	 <img src="img/studentservices.jpg">
+ 	 <img style="width:1500px; height: 200px;" src="img/studentservices.jpg">
   </a>
 
   </div>
+	<br>
+
 <div class = "main2">
 							<div class="body1st">
 										 <h1>RESIDENT</h1>
+
 							 </div>
+							 <br><br>
 
 
+  	<div class="body2nd">
 
-</head>
-<body>
 
 
 <center>
+
 	<div class="w3-contentw3-section" >
-	  <p><FONT FACE="script mt bold" size="60px">Residential Life</FONT></p>
+	  <p><FONT FACE="script mt bold" size="60px"color=black>Residential Life</FONT></p>
+		<br><br>
 
 	  <img class="mySlides w3-animate-fading" src="img/dormroom4.jpg" style="width:50% "  >
 	  <img class="mySlides w3-animate-fading" src="img/tutoring1.jpg" style="width:50% ">
@@ -96,6 +176,9 @@
 		 <img class="mySlides w3-animate-fading" src="img/dorm.jpg" style="width:50% ">
 		 <img class="mySlides w3-animate-fading" src="img/library2.png" style="width:50% ">
 	</div>
+	<br><br>
+	<br><br>
+
 	<style>
 	.w3-contentw3-section{
 		max-width: : 60%;
@@ -104,7 +187,6 @@
 					<script>
 							var myIndex = 0;
 							carousel();
-
 							function carousel() {
 							    var i;
 							    var x = document.getElementsByClassName("mySlides");
@@ -117,201 +199,135 @@
 							    setTimeout(carousel, 9000);
 							}
 					</script>
-
-<style>
-					div.background1 {
-						background-image: url(img/both.jpg);
-
-						height: 90%;
-						width: 80%;
-						background-size: cover;
-					background-position: 40% 40%;
-					background-origin: padding-box;
-					background-repeat: no-repeat;
-
-
-					/*border: 10px solid black;*/
-
-					}
-
-					div.background2 {
-						background-image: url(img/library.jpg);
-
-						height: 90%;
-						width: 80%;
-						background-size:cover;
-					background-position: 100% 100%;
-					background-origin: padding-box;
-					background-repeat: no-repeat;
-
-
-					/*border: 10px solid black;*/
-
-					}
-					div.background3 {
-						background-image: url(img/cafeteria.jpg);
-
-						height: 90%;
-						width: 80%;
-						background-size:cover;
-					background-position: 100% 100%;
-					background-origin: padding-box;
-					background-repeat: no-repeat;
+					<style>
+									 .background1 {
+										 background-image: url(img/both.jpg);
+										 height: 90%;
+										 width: 80%;
+										 background-size: cover;
+									 background-position: 40% 40%;
+									 background-origin: padding-box;
+									 background-repeat: no-repeat;
+									 height: 700px;
+									 width: 900px;
+									 /*border: 10px solid black;*/
+									 }
+					</style>
+						 <div class="background1">
+								 <div class="transbox1">
+											 <font face="Vivaldi" size="100px">Halls</font>
+											 <div class="style13">
+													    <p ><font face="monotype corsiva">
+														 Union and Draw School welcomes you to the Department of Residence Life. On-campus living is a vital component of the collegiate
+														 experience and we encourage you to invest in this opportunity and lay a strong foundation for your future.
+														 Our halls are staffed with remarkably talented individuals who want to help you make the most of this experience. We invite you to
+															explore our residence halls and get involved with the campus community.</font></p>
+											</div>
+								 </div>
+						</div>
+						<br><br>
 
 
-					/*border: 10px solid black;*/
+						<style>
+										 .background2 {
+											 background-image: url(img/library.jpg);
+											 height: 90%;
+											 width: 80%;
+											 background-size: cover;
+										 background-position: 40% 40%;
+										 background-origin: padding-box;
+										 background-repeat: no-repeat;
+										 height: 700px;
+										 width: 900px;
+										 /*border: 10px solid black;*/
+										 }
+						</style>
+							 <div class="background2">
+									 <div class="transbox2">
+												 <font face="Vivaldi" size="100px">Library</font>
+												 <div class="style13">
+														    <p ><font face="monotype corsiva">
+															 The mission of the UDS Library is to assist students in their search for attaining knowledge by providing information resources and services that encourage learning, support education, and promote intellectual growth.
+ 									             We are here to satisfy all enrolled students’ information and research needs.
+ 									           The UDS Library provide access to several thousand books and have subscriptions to critically acclaimed newspapers and magazines online and on print.</font></p>
+ 									</div>
 
-					}
-					div.background4 {
-						background-image: url(img/tutoring3.jpg);
+									 </div>
+							</div>
 
-						height: 90%;
-						width: 80%;
-						background-size:cover;
-					background-position: 100% 100%;
-					background-origin: padding-box;
-					background-repeat: no-repeat;
+							<br><br>
 
-
-					/*border: 10px solid black;*/
-
-					}
-
-
-					div.transbox1 {
-
-						float:left;
-						width: 50%;
-						height:80%;
-					margin: 30px;
-					background-color: #ffffff;
-					border: 5px solid black;
-					opacity: 0.8;
-					filter: alpha(opacity=60); /* For IE8 and earlier */
-
-					font-size: 26;
-					margin: 5%;
-					font-weight: bold;
-					 color: #000000;
-							}
-
-							div.transbox2 {
-
-								float:right;
-								width: 45%;
-								height:82%;
-							margin: 30px;
-							background-color: #ffffff;
-							border: 5px solid black;
-							opacity: 0.7;
-							filter: alpha(opacity=60); /* For IE8 and earlier */
-
-							font-size: 26;
-							margin: 5%;
-							font-weight: bold;
-							 color: #000000;
-									}
-
-									div.transbox3{
-
-										float:left;
-										width: 50%;
-										height:80%;
-									margin: 30px;
-									background-color: #ffffff;
-									border: 5px solid black;
-									opacity: 0.8;
-									filter: alpha(opacity=60); /* For IE8 and earlier */
-
-									font-size: 26;
-									margin: 5%;
-									font-weight: bold;
-									 color: #000000;
-											}
-											.transbox4 {
-
-												float:right;
-												width: 50%;
-												height:80%;
-											margin: 30px;
-											background-color: #ffffff;
-											border: 5px solid black;
-											opacity: 0.8;
-											filter: alpha(opacity=60); /* For IE8 and earlier */
-
-											font-size: 26;
-											margin: 5%;
-											font-weight: bold;
-											 color: #000000;
-													}
+							<style>
 
 
-							hr.style13 {
-						height: 15px;
-						width: 60%;
-						border: 0;
-						box-shadow: 0 40px 40px -40px #595959 inset;
-					}
+											 .background3 {
+												 background-image: url(img/cafeteria.jpg);
+												 height: 90%;
+												 width: 80%;
+												 background-size: cover;
+											 background-position: 40% 40%;
+											 background-origin: padding-box;
+											 background-repeat: no-repeat;
+											 height: 700px;
+											 width: 900px;
+											 /*border: 10px solid black;*/
+											 }
+							</style>
 
-</style>
+							<div class="background3">
+									<div class="transbox3">
+												<font face="Vivaldi" size="100px">Cafeteria</font>
+												<div class="style13">
+														    <p ><font face="monotype corsiva">
+															The Dining Services of UDS has worked hard to
+															 design a dining program guaranteed to meet your individual needs. You have got plenty on your mind: classes, sports,
+															 clubs, community service etc, so we have made it our goal to make sure that you won’t have to worry about finding something great to eat when you want it. Let us know what we can do to make it even better! We want UDS to have the best dining service there is,
+																and with your help we can do it! </div>
+
+									</div>
+
+							</div>
+							<br><br>
+
+
+							<style>
+											 .background4{
+												 background-image: url(img/peer.jpg);
+												 height: 90%;
+												 width: 80%;
+												 background-size: cover;
+											 background-position: 40% 40%;
+											 background-origin: padding-box;
+											 background-repeat: no-repeat;
+											 height: 700px;
+											 width: 900px;
+											 /*border: 10px solid black;*/
+											 }
+							</style>
+
+														<div class="background4">
+																<div class="transbox4">
+																			<font face="Vivaldi" size="100px">Tutoring</font>
+																			<div class="style13">
+																					    <p ><font face="monotype corsiva">
+																						We provide an array of comprehensive academic and personal support services to all UDS students.
+																						The Student Success Center shares a common space with the Career Center on the eighth floor.
+																						 This location serves as a prime spot for students to benefit from all the services UDS has to offer.
+																						 Students will develop learning strategies that empower them to excel in their potential. </div>
+
+																</div>
+														</div>
 
 
 
 
 
-
-
-		<br><br><br>
-		<div class="background1">
-			  <div class="transbox1">
-							<font face="Vivaldi" size="100px">Halls</font>
-							<hr class="style13">
-					        <p ><font face="monotype corsiva">
-										Union and Draw School welcomes you to the Department of Residence Life. On-campus living is a vital component of the collegiate
-					          experience and we encourage you to invest in this opportunity and lay a strong foundation for your future.
-					          Our halls are staffed with remarkably talented individuals who want to help you make the most of this experience. We invite you to
-					           explore our residence halls and get involved with the campus community.</font></p>
-			  </div>
-  </div>
-	<br><br><br><br>
-	<div class="background2">
-			<div class="transbox2">
-						<font face="Vivaldi" size="100px">Library</font>
-						<hr class="style13">
-								<p ><font face="monotype corsiva">
-									The mission of the UDS Library is to assist students in their search for attaining knowledge by providing information resources and services that encourage learning, support education, and promote intellectual growth.
-			             We are here to satisfy all enrolled students’ information and research needs.
-			           The UDS Library provide access to several thousand books and have subscriptions to critically acclaimed newspapers and magazines online and on print.</font></p>
-			</div>
-</div>
-<br><br>
-<div class="background3">
-		<div class="transbox3">
-					<font face="Vivaldi" size="100px">Cafeteria</font>
-					<hr class="style13">
-							<p ><font face="monotype corsiva">
-						The Dining Services of UDS has worked hard to
-						 design a dining program guaranteed to meet your individual needs. You have got plenty on your mind: classes, sports,
-						 clubs, community service etc, so we have made it our goal to make sure that you won’t have to worry about finding something great to eat when you want it. Let us know what we can do to make it even better! We want UDS to have the best dining service there is,
-						  and with your help we can do it!</font></p>
-		</div>
-	</div>
-	<br><br>
-
-	<div class="background4">
-			<div class="transbox4">
-						<font face="Vivaldi" size="100px">Tutoring</font>
-						<hr class="style13">
-								<p ><font face="monotype corsiva">
-									We provide an array of comprehensive academic and personal support services to all UDS students. The Student Success Center shares a common space with the Career Center on the eighth floor.
-						        This location serves as a prime spot for students to benefit from all the services
-						         UDS has to offer. Students will develop learning strategies that empower them to excel in their potential.</font></p>
-			</div>
-		</div>
-		<br><br>
 
 </center>
+
 </div>
+</div>
+
 <footer> <!-- Sakin bu footer in yerini oynatma -->
 	<div class="social">
 		<h4>Follow Us</h4>
