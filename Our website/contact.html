@@ -3,6 +3,8 @@
 <title>Union and Draw School</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <style>
 .mySlides {display:none}
 
@@ -15,6 +17,7 @@
 	<title>Student Services</title>
 	<link rel="stylesheet" type = "text/css" href = "css/contact.css">
 	<link rel="stylesheet" type = "text/css" href = "contact.html">
+	<script type="text/javascript" src="js/as.js"></script>
 
 </head>
 <div class ="hepsi">
@@ -32,88 +35,155 @@
 		 <li><a href="events.html" >Events</a></li>
 		 <li><a href="calendar.html" >Calendar</a></li>
 		<li><a href="resident.html" >Resident</a></li>
+		<li><a href="studentservice.html" >Student Services</a></li>
 		<li><a href="contact.html" >Contact Us</a></li>
 		<li><a <button onclick="document.getElementById('id01').style.display='block'" style="width:auto">Sign Up</button></a></li>
 
 
 	</ul>
-
-<!-- Buradan assagisi Login Kismi icin -->
-		<div id="id01" class="modal">
-
-  <form class="modal-content animate" action="/action_page.php">
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="img/avatar2.png" alt="Avatar" class="avatar">
-    </div>
-
-    <div class="container">
-      <label><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
-
-      <label><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-
-      <button type="submit">Login</button>
-			<button type="submit">Register</button>
-      <input type="checkbox" checked="checked"> Remember me
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw"><a href="#">Forgot Password?</a></span>
-    </div>
-  </form>
-</div>
-<!-- Buradan yukarisi Login Kismi icin -->
+	<!-- Buradan assagisi Login Kismi icin -->
 
 
+	<div id="id01" class="modal">
+		 <div class="container">
+			 <span onclick="document.getElementById('id01').style.display='none'">&times;</span>
+				 <div class="flat-form">
 
- <div class="mainpic"  >
-  <a href="index.html">
- 	 <img src="img/studentservices.jpg">
-  </a>
+						 <ul class="tabs">
+								 <li>
+										 <a href="#login" class="active">Login</a>
+								 </li>
+								 <li>
+										 <a href="#register">Register</a>
 
-  </div>
-
-	<div class = "main2">
-	  <div class = "body1st">
-	   <div class="aboutwebsite">
-	          <h1>Contact Us</h1>
-
-	    </div>
-
+								 </li>
 
 
-	   </div>
+						 </ul>
+						 <div id="login" class="form-action show" >
 
 
-	   <fieldset>
-	   <legend>Contact us</legend>
-	   <input type='hidden' name='submitted' id='submitted' value='1'/>
+								 <h1>Login</h1>
 
-	     <label for='name' >Your Full Name*: </label><br/>
-	     <input type='text' name='name' id='name'  maxlength="50" /><br/>
+								 <form>
+										 <ul>
+												 <li>
+														 <input type="text" placeholder="Username" />
+												 </li>
+												 <li>
+														 <input type="password" placeholder="Password" />
+												 </li>
 
-	     <label for='email' >Email Address*:</label><br/>
-	     <input type='text' name='email' id='email' maxlength="50" /><br/>
+												 <li>
+														 <input type="submit" value="Login" class="button" />
+												 </li>
+										 </ul>
+								 </form>
+								<h1>Reset Password</h1>
+								 <form>
+										 <ul>
+												 <li>
+														 <input type="text" placeholder="Email" />
+												 </li>
+												 <li>
+														 <input type="text" placeholder="Birthday" />
+												 </li>
+												 <li>
+														 <input type="submit" value="Send" class="button" />
+												 </li>
+										 </ul>
+								 </form>
+						 </div>
+						 <!--/#login.form-action-->
+						 <div id="register" class="form-action hide">
 
-	     <label for='phone' >Phone Number:</label><br/>
-	     <input type='text' name='phone' id='phone' maxlength="15" /><br/>
+								 <h1>Register</h1>
 
-	     <label for='message' >Message:</label><br/>
-	     <textarea rows="10" cols="50" name='message' id='message'> </textarea>
+								 <form>
 
-	     <input type='submit' name='Submit' value='Submit' />
+										 <ul>
 
-	   </fieldset>
+												 <li>
+														 <input type="text" placeholder="Name&Surname" />
+														<input type="text" placeholder="Username" />
+														<input type="password" placeholder="Password" />
+														<input type="password" placeholder="Password Confirm" />
+
+														<input type="email" placeholder="E-mail">
+														<p>
+														Birthday:<p><input type="date" placeholder="Birthday" />
+																														</li>
+
+
+												 <li>
+														 <input type="submit" value="Sign Up" class="button" />
+												 </li>
+										 </ul>
+								 </form>
+
+
+						 </div>
+
+
+						 <!--/#register.form-action-->
+
+						 <!--/#register.form-action-->
+				 </div>
+		 </div>
+
+
+	</div>
+
+
+
+
+
+	<!-- Buradan yukarisi Login Kismi icin --> <div class="mainpic"  >
+	  <a href="index.html">
+	 	 <img src="img/studentservices.jpg">
+	  </a>
+
+	  </div>
+
+		<div class = "main2">
+		  <div class = "body1st">
+		   <div class="aboutwebsite">
+		          <h1>Contact Us</h1>
+
+		    </div>
+
+
+
+		   </div>
+
+
+		   <fieldset>
+		   <legend>Contact us</legend>
+		   <input type='hidden' name='submitted' id='submitted' value='1'/>
+
+		     <label for='name' >Your Full Name*: </label><br/>
+		     <input type='text' name='name' id='name'  maxlength="50" /><br/>
+
+		     <label for='email' >Email Address*:</label><br/>
+		     <input type='text' name='email' id='email' maxlength="50" /><br/>
+
+		     <label for='phone' >Phone Number:</label><br/>
+		     <input type='text' name='phone' id='phone' maxlength="15" /><br/>
+
+		     <label for='message' >Message:</label><br/>
+		     <textarea rows="10" cols="50" name='message' id='message'> </textarea>
+
+		     <input type='submit' name='Submit' value='Submit' />
+
+		   </fieldset>
 
 
 
 
 
 
-</div>
+	</div>
+
 <footer> <!-- Sakin bu footer in yerini oynatma -->
 	<div class="social">
 		<h4>Follow Us</h4>
