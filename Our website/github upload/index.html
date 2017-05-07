@@ -1,0 +1,351 @@
+
+
+<!DOCTYPE>
+<html lang="en">
+<title>Union and Draw School</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<!-- Basic Page Needs
+================================================== -->
+
+
+<style>
+.mySlides {display:none}
+
+</style>
+
+
+<head>
+	<meta charset="utf-8">
+<title>Union and Draw School</title>
+
+		<link rel="stylesheet" type = "text/css" href = "css/index.css">
+	<script type="text/javascript" src="js/as.js"></script>
+
+</head>
+<div class ="hepsi">
+
+<header>
+
+	<!-- Dont Use Header here   It will cause problem with nav bar -->
+
+</header>
+
+<body>
+
+	<ul class="navigation">
+		<li><a href="index.html" >Home</a></li>
+		 <li><a href="events.html" >Events</a></li>
+		 <li><a href="calendar.html" >Calendar</a></li>
+		<li><a href="resident.html" >Resident</a></li>
+		<li><a href="studentservice.html" >Student Services</a></li>
+		<li><a href="contact.html" >Contact Us</a></li>
+		<li><a <button onclick="document.getElementById('id01').style.display='block'" style="width:auto">Sign Up</button></a></li>
+
+
+	</ul>
+<!-- Buradan assagisi Login Kismi icin -->
+
+
+<div id="id01" class="modal">
+	 <div class="container">
+		 <span onclick="document.getElementById('id01').style.display='none'">&times;</span>
+			 <div class="flat-form">
+
+					 <ul class="tabs">
+							 <li>
+									 <a href="#login" class="active">Login</a>
+							 </li>
+							 <li>
+									 <a href="#register">Register</a>
+
+							 </li>
+
+
+					 </ul>
+					 <div id="login" class="form-action show" >
+
+
+							 <h1>Login</h1>
+
+							 <form>
+									 <ul>
+											 <li>
+													 <input type="text" placeholder="Username" />
+											 </li>
+											 <li>
+													 <input type="password" placeholder="Password" />
+											 </li>
+
+											 <li>
+													 <input type="submit" value="Login" class="button" />
+											 </li>
+									 </ul>
+							 </form>
+							<h1>Reset Password</h1>
+							 <form>
+									 <ul>
+											 <li>
+													 <input type="text" placeholder="Email" />
+											 </li>
+											 <li>
+													 <input type="text" placeholder="Birthday" />
+											 </li>
+											 <li>
+													 <input type="submit" value="Send" class="button" />
+											 </li>
+									 </ul>
+							 </form>
+					 </div>
+					 <!--/#login.form-action-->
+					 <div id="register" class="form-action hide">
+
+							 <h1>Register</h1>
+
+							 <form>
+
+									 <ul>
+
+											 <li>
+													 <input type="text" placeholder="Name&Surname" />
+													<input type="text" placeholder="Username" />
+													<input type="password" placeholder="Password" />
+													<input type="password" placeholder="Password Confirm" />
+
+													<input type="email" placeholder="E-mail">
+													<p>
+													Birthday:<p><input type="date" placeholder="Birthday" />
+																													</li>
+
+
+											 <li>
+													 <input type="submit" value="Sign Up" class="button" />
+											 </li>
+									 </ul>
+							 </form>
+
+
+					 </div>
+
+
+					 <!--/#register.form-action-->
+
+					 <!--/#register.form-action-->
+			 </div>
+	 </div>
+
+
+</div>
+
+
+
+
+
+<!-- Buradan yukarisi Login Kismi icin -->
+ <div class="mainpic"  >
+  <a href="index.html">
+ 	 <img style="width:1500px; height: 200px;" src="img/studentservices.jpg">
+  </a>
+
+  </div>
+<div class = "main2">
+	<div id ="div10">
+	</div>
+
+							<div class="body1st">
+										 <h1>Home</h1>
+							 </div>
+
+ 	<div class="body2nd">
+
+
+						 <!--         											Bu body formati koymak istiyorum ama resim ile ust uste cikiyor-->
+						 <div class="flex-container">
+							 <div class="slideshow">
+							  <div class="w3-container">
+							    <img class="mySlides" src="img/student1.png" style="width:100%">
+							    <img class="mySlides" src="img/student2.jpg" style="width:100%">
+							    <img class="mySlides" src="img/student3.jpg" style="width:100%">
+							    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottomcenter" style="width:100%">
+							      <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+							      <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+							      <span class="w3-badge demo  " onclick="currentDiv(1)"></span>
+							      <span class="w3-badge demo  " onclick="currentDiv(2)"></span>
+							      <span class="w3-badge demo " onclick="currentDiv(3)"></span>
+							    </div>
+							  </div>
+							  </div>
+
+							  <script>
+							  var slideIndex = 1;
+							  showDivs(slideIndex);
+
+							  function plusDivs(n) {
+							    showDivs(slideIndex += n);
+							  }
+
+							  function currentDiv(n) {
+							    showDivs(slideIndex = n);
+							  }
+
+
+							  function showDivs(n) {
+
+							    var i;
+							    var x = document.getElementsByClassName("mySlides");
+							    var dots = document.getElementsByClassName("demo");
+							    if (n > x.length) {slideIndex = 1}
+							    if (n < 1) {slideIndex = x.length}
+							    for (i = 0; i < x.length; i++) {
+							       x[i].style.display = "none";
+							    }
+							    for (i = 0; i < dots.length; i++) {
+							       dots[i].className = dots[i].className.replace(" w3-white", "");
+							    }
+							    x[slideIndex-1].style.display = "block";
+							    dots[slideIndex-1].className += " w3-white";
+
+							  }
+
+							   // under this one its makes automatic
+
+							   var myIndex = 0;
+							  carousel();
+
+							  function carousel() {
+							      var i;
+							      var x = document.getElementsByClassName("mySlides");
+							      for (i = 0; i < x.length; i++) {
+							         x[i].style.display = "none";
+							      }
+							      myIndex++;
+							      if (myIndex > x.length) {myIndex = 1}
+							      x[myIndex-1].style.display = "block";
+							      setTimeout(carousel, 4000); // Change image every 4 seconds
+							  }
+							  </script>
+		            </div>
+
+
+
+
+
+														 <article class="article">
+
+															 <h1>Home</h1>
+															 <div id ="div0">
+														   <p>The Student Success Center is a comprehensive
+																 resource center for students. We promote student success by working closely
+																 with faculty to provide academic support programs. We offer a writing center and
+																 a peer education program for students at all levels in addition to supplemental instruction
+																 and testing. Our writing and peer education services are delivered
+																  face-to-face and online in order to meet the demands of our diverse and widespread student population.</p>
+																</div>
+
+
+																	<h2>Events</h2>
+																	<div id ="div1">
+															   <p><img style="width:430px; height: 200px;float:right" src="img/events1.jpg">
+
+																	 We regularly run open house events in the US and Canada. These events are a chance for you to find out more about Saint James School of Medicine, to meet faculty, students and graduates, and to have your questions answered. Friends and family are always welcome.
+
+																	 Take the first step towards your career in medicine. Register for a Saint James open house today.We regularly run open house events in the US and Canada. These events are a chance for you to find out more about Saint James School of Medicine, to meet faculty, students and graduates, and to have your questions answered. Friends and family are always welcome.
+
+Take the first step towards your career in medicine. Register for a Saint James open house today.
+																 </p>
+															 </div>
+
+																 <h2>Calendar</h2>
+																 <div id ="div2">
+																<p><img style="width:430px; height: 200px;float:left" src="img/calendar5.jpg">In response to student or instructors’ requests, the Center also
+																	 offers subject area tutoring in mathematics, computer science, and biology
+																	  during some semesters.
+																	Students may discuss concerns related to courses that are in
+																Students may discuss concerns related to courses that are in
+															Students may discuss concerns related to courses that are in
+														Students may discuss concerns related to courses that are in
+													Students may discuss concerns related to courses that are in
+												Students may discuss concerns related to courses that are in
+											Students may discuss concerns related to courses that are in
+										Students may discuss concerns related to courses that are in
+									Students may discuss concerns related to courses that are in
+								Students may discuss concerns related to courses that are in
+							Students may discuss concerns related to courses that are in
+						Students may discuss concerns related to courses that are in
+					Students may discuss concerns related to courses that are in progress.
+
+															</div>
+
+															<h2>Resident</h2>
+															<div id ="div3">
+														 <p><img style="width:430px; height: 200px;float:right" src="img/resi.png">
+
+															 The Center also provides academic testing services in Victoria
+ 															for UHV students (correspondence and entrance or placement exams)
+ 															and on behalf of UHV faculty
+ 															(makeup exams). To schedule a test session, individuals can call 361-570-  4288.
+															The Center also provides academic testing services in Victoria
+															for UHV students (correspondence and entrance or placement exams)
+															and on behalf of UHV faculty
+															(makeup exams). To schedule a test session, individuals can call 361-570- 4288.
+															The Center also provides academic testing services in Victoria
+															for UHV students (correspondence and entrance or placement exams)
+															and on behalf of UHV faculty
+															(makeup exams). To schedule a test session, individuals can call 361-570-tutoring.
+														 </p>
+													 </div>
+
+
+
+
+													 <h2>Student Service</h2>
+													 <div id ="div4">
+													<p><img style="width:430px; height: 200px;float:left" src="img/guidance.jpg">The Center also provides academic testing services in Victoria
+														for UHV students (correspondence and entrance or placement exams)
+														and on behalf of UHV faculty
+														(makeup exams). To schedule a test session, individualsThe Center also provides academic testing services in Victoria
+															for UHV students (correspondence and entrance or placement exams)
+															and on behalf of UHV faculty
+															(makeup exams). To schedule a test session, individualsThe Center also provides academic testing services in Victoria
+																for UHV students (correspondence and entrance or placement exams)
+																and on behalf of UHV faculty
+																(makeup exams). To schedule a test session, individualsThe Center also provides academic testing services in Victoria
+																	for UHV students (correspondence and entrance or placement exams)
+																	and on behalf of UHV faculty
+																	(makeup exams). To schedule a test session, individuals progress.</a>
+
+													</div>
+
+
+
+
+
+														 </article>
+
+
+										            </div>
+
+
+</div>
+
+
+<footer> <!-- Sakin bu footer in yerini oynatma -->
+	<div class="social">
+		<h4>Follow Us</h4>
+		<a href="https://www.facebook.com"><img src="img/face.png" class="sociallogo"></a>
+		<a href="https://www.linkedin.com"><img src="img/link2.png" class="sociallogo"></a>
+		<a href="https://www.instagram.com"><img src="img/ins2.jpg" class="sociallogo"></a>
+		<a href="https://twitter.com/login"><img src="img/twit.jpg" class="sociallogo"></a>
+		<a href="https://www.youtube.com"><img src="img/you2.jpg" class="sociallogo"></a>
+	</div>
+</footer>
+</body>
+ </div><!-- div hepsi nin sonu -->
+
+</div>
+
+
+
+</html> <!-- butun herseyin -->
